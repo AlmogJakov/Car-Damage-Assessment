@@ -15,7 +15,7 @@ print('itay')
 n = 1512
 for i in range(5):
     # load an image from file
-    img_path = f'database/image_resized1/{i}.jpg'
+    img_path = f'database/image_224X224/{i}.jpg'
     # img = cv2.cvtColor(cv2.imread(img_path), cv2.COLOR_BGR2RGB) / 255
     img = Image.open(img_path).convert('RGB')
     in_transform = transforms.Compose([
