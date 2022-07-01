@@ -5,7 +5,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 
 def k_nearest_neighbors(X_train, X_test, y_train, y_test):
-    neighbors = np.arange(1, 20)
+    neighbors = np.arange(1, 25)
     train_accuracy = np.empty(len(neighbors))
     test_accuracy = np.empty(len(neighbors))
 

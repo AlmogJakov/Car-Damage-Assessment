@@ -1,6 +1,6 @@
 from keras import Sequential
 from keras.callbacks import LambdaCallback
-from keras.layers import Flatten, Dense, Activation, MaxPooling2D, Conv2D
+from keras.layers import Flatten, Dense, Activation, MaxPooling2D, Conv2D, MaxPool2D
 from matplotlib import pyplot as plt
 
 
@@ -11,9 +11,10 @@ def evaluate_test(model, X_test, y_test, test_acc, test_loss):
 
 
 def CNN(X_train, X_test, y_train, y_test):
-    ROW = 224
-    COL = 224
-    CHANNEL = 3
+    ROW = 100
+    COL = 10
+    CHANNEL = 1
+
     X_train = X_train.reshape(X_train.shape[0], ROW, COL, CHANNEL)
     X_test = X_test.reshape(X_test.shape[0], ROW, COL, CHANNEL)
     model = Sequential()
@@ -32,7 +33,7 @@ def CNN(X_train, X_test, y_train, y_test):
 
     model.add(Flatten())  # this converts our 3D feature maps to 1D feature vectors
 
-    model.add(Dense(224))
+    model.add(Dense(32))
 
     model.add(Dense(1))
     model.add(Activation('sigmoid'))
