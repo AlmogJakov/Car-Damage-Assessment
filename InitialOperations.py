@@ -11,9 +11,9 @@ labels_dec = {'unknown': 0, 'head_lamp': 1, 'door_scratch': 2, 'door_dent': 3, '
               'bumper_dent': 6, 'bumper_scratch': 7}
 
 
-def split2_train_test():
+def split_train_test(vectors_path):
     labels = []
-    with open('database/vectors_canny_224X224.pkl', 'rb') as f:
+    with open(vectors_path, 'rb') as f:
         data = pickle.load(f)
     file = open('database/data.csv')
     csvreader = csv.reader(file)
