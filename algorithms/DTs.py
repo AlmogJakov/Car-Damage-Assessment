@@ -5,7 +5,7 @@ from sklearn import tree
 
 
 def decision_tree_classifier(X_train, X_test, y_train, y_test):
-    depth = np.arange(1, 20)
+    depth = np.arange(1, 10)
     train_accuracy = np.empty(len(depth))
     test_accuracy = np.empty(len(depth))
 

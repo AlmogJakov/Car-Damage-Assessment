@@ -28,7 +28,7 @@ for i in range(n):
     vectors.append(input_vgg[0].tolist())
 
 # save the vectors to binary file
-with open('database/image_bilateralLoG_224X224.pkl', 'wb') as f:
+with open('database/image_alignMin_224X224.pkl', 'wb') as f:
     pickle.dump(vectors, f)
 
 stop = timeit.default_timer()
