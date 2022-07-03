@@ -14,7 +14,7 @@ n = 1512
 vectors = []
 for i in range(n):
     # load an image from file
-    img_path = f'database/image_canny_224X224/{i}.png'
+    img_path = f'database/image_bilateral_224X224/{i}.png'
     img = Image.open(img_path).convert('RGB')
     in_transform = transforms.Compose([
         torchvision.transforms.CenterCrop(224),
@@ -28,7 +28,7 @@ for i in range(n):
     vectors.append(input_vgg[0].tolist())
 
 # save the vectors to binary file
-with open('database/vectors_canny_224X224.pkl', 'wb') as f:
+with open('database/image_bilateralLoG_224X224.pkl', 'wb') as f:
     pickle.dump(vectors, f)
 
 stop = timeit.default_timer()
