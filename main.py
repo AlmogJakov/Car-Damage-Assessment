@@ -1,5 +1,5 @@
 from InitialOperations import split_train_test, get_data
-from algorithms.CNN import CNN, CNN2, cnn_via_vgg
+from algorithms.CNN import cnn, cnn_via_vgg
 # from algorithms.CNN2 import CNN
 from algorithms.DTs import decision_tree
 from algorithms.SVM import Support_Vector_Machine
