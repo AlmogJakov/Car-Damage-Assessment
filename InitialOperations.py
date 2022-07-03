@@ -40,7 +40,11 @@ def get_data(project_path):
         data.append(array)
 
     data = np.array(data)
+<<<<<<< HEAD
     # data = data.reshape((data.shape[0], -1))
+=======
+    data = data.reshape((data.shape[0], -1))
+>>>>>>> 89bbd590ccc5a9bdf6c730f1df1a3bfb62fd8c36
     # Normalize
     # data = data / 255
 
