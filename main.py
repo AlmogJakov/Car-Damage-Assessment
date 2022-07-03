@@ -6,7 +6,7 @@ from algorithms.SVM import Support_Vector_Machine
 from algorithms.kNN import k_nearest_neighbors
 
 if __name__ == '__main__':
-    x_train, x_test, y_train, y_test = split_train_test('database/vectors_224X224.pkl')
+    # x_train, x_test, y_train, y_test = split_train_test('database/vectors_224X224.pkl')
     # x_train, x_test, y_train, y_test = split_train_test('database/vectors_bilateral_224X224.pkl')
     # x_train, x_test, y_train, y_test = split_train_test('database/image_bilateralLoG_224X224.pkl')
     # x_train, x_test, y_train, y_test = split_train_test('database/image_bilateralLoGBlack_224X224.pkl')
@@ -63,19 +63,19 @@ if __name__ == '__main__':
      -------------------------------------------------------------------
     |                      CNN (~55% accuracy)                          |
     |___________________________________________________________________|'''
-    cnn(x_train_img, x_test_img, y_train_img, y_test_img)
+    # cnn(x_train_img, x_test_img, y_train_img, y_test_img)
     '''
      -------------------------------------------------------------------
-    |                      SVM (~70% accuracy)                          |
+    |                      SVM (~30% accuracy)                          |
     |___________________________________________________________________|'''
-    #
+    # Support_Vector_Machine(x_train_img, x_test_img, y_train_img, y_test_img)
     '''
      -------------------------------------------------------------------
-    |                      KNN (~65% accuracy)                          |
+    |                      KNN (~35% accuracy)                          |
     |___________________________________________________________________|'''
-    #
+    # k_nearest_neighbors(x_train_img, x_test_img, y_train_img, y_test_img)
     '''
      -------------------------------------------------------------------
-    |                      DTs (~50% accuracy)                          |
+    |                      DTs (~35% accuracy)                          |
     |___________________________________________________________________|'''
-    #
+    # decision_tree(x_train_img, x_test_img, y_train_img, y_test_img)

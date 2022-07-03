@@ -15,6 +15,11 @@ def evaluate_test(model, X_test, y_test, test_acc, test_loss):
 
 
 def cnn(X_train, X_test, y_train, y_test):
+    ROW = 45
+    COL = 45
+    CHANNEL = 3
+    X_train = X_train.reshape(X_train.shape[0], ROW, COL, CHANNEL)
+    X_test = X_test.reshape(X_test.shape[0], ROW, COL, CHANNEL)
     model = Sequential()
     model.add(Conv2D(45, (3, 3), activation='relu', input_shape=X_train.shape[1:]))
     model.add(MaxPooling2D((2, 2)))

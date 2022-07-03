@@ -40,9 +40,9 @@ def get_data(project_path):
         data.append(array)
 
     data = np.array(data)
-    # data = data.reshape((data.shape[0], -1))
+    data = data.reshape((data.shape[0], -1))
     # Normalize
-    # data = data / 255
+    data = data / 255
 
     labels = get_csv_labels()
 
