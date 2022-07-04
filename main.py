@@ -1,6 +1,5 @@
 from InitialOperations import split_train_test, get_data
 from algorithms.CNN import *
-# from algorithms.CNN import cnn, cnn_via_vgg
 from algorithms.DTs import decision_tree
 from algorithms.SVM import Support_Vector_Machine
 from algorithms.kNN import k_nearest_neighbors

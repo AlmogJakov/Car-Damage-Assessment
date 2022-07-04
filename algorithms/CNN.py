@@ -3,10 +3,12 @@ from keras import Sequential
 from keras.callbacks import LambdaCallback
 from keras.layers import Flatten, Dense, Activation, MaxPooling2D, Conv2D, MaxPool2D, Conv1D, Dropout, MaxPooling1D
 from matplotlib import pyplot as plt
-from tensorflow import keras
+# from tensorflow import keras
+import tensorflow as tf
 
 
 # https://www.kaggle.com/code/anandhuh/image-classification-using-cnn-for-beginners/notebook
+# https://www.tensorflow.org/guide/effective_tf2#api_cleanup
 
 def evaluate_test(model, X_test, y_test, test_acc, test_loss):
     res_test = model.evaluate(X_test, y_test)
@@ -29,7 +31,7 @@ def cnn(X_train, X_test, y_train, y_test):
     model.add(Flatten())  # converts 3D feature maps to 1D feature vectors
     model.add(Dense(62, activation='relu'))
     model.add(Dense(32))
-    model.compile(optimizer='adam', loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+    model.compile(optimizer='adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['accuracy'])
     history = model.fit(X_train, y_train, epochs=5, validation_data=(X_test, y_test))
     plt.plot(history.history['accuracy'], label='train accuracy')
@@ -48,7 +50,7 @@ def cnn_via_vgg(X_train, X_test, y_train, y_test):
     # model.add(Flatten())  # converts 3D feature maps to 1D feature vectors
     model.add(Dense(62, activation='relu'))
     model.add(Dense(32))
-    model.compile(optimizer='adam', loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+    model.compile(optimizer='adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['accuracy'])
     history = model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
     plt.plot(history.history['accuracy'], label='train accuracy')
