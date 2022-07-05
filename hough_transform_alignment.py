@@ -11,6 +11,8 @@ from matplotlib import cm
 import cv2
 
 
+# Hough line transform alignment
+
 def binarizeImage(RGB_image):
     image = rgb2gray(RGB_image)
     threshold = threshold_otsu(image)
@@ -38,6 +40,7 @@ def findTiltAngle(image_edges):
 
 def rotateImage(RGB_image, angle):
     return rotate(RGB_image, angle)
+
 
 n = 1512
 for i in range(n):

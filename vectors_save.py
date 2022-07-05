@@ -3,17 +3,16 @@ from torchvision import transforms, models
 import torchvision
 import torch
 import pickle
-
 import timeit
-start = timeit.default_timer()
 
+start = timeit.default_timer()
 vgg2 = models.vgg16(pretrained=True)
 device = torch.device("cuba" if torch.cuda.is_available() else "cpu")
 vgg2.to(device)
 n = 1512
 vectors = []
 for i in range(n):
-    # load an image from file
+    # load the images from folder one by one (Change to the desired input name)
     img_path = f'database/image_bilateral_224X224/{i}.png'
     img = Image.open(img_path).convert('RGB')
     in_transform = transforms.Compose([
@@ -27,7 +26,7 @@ for i in range(n):
     # print(input_vgg[0].tolist())
     vectors.append(input_vgg[0].tolist())
 
-# save the vectors to binary file
+# Save the vectors to binary file (Change to the desired output name)
 with open('database/image_alignMin_224X224.pkl', 'wb') as f:
     pickle.dump(vectors, f)
 
