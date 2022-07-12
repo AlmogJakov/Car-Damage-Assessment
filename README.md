@@ -24,3 +24,12 @@ Each collected image represents one car with one specific type of damage.
 Example images from each class; Broken headlamp, Broken tail lamp, Glass shatter, Door scratch, Door dent, Bumper dent, Bumper scratch, Unknown   
 
 [Database Source](https://www.kaggle.com/datasets/hamzamanssor/car-damage-assessment)
+
+
+<h2>Database tweaks comparison:</h2>  
+
+- Examining the effect of image properties on learning    
+- Comparing results with success rates
+
+![image](https://user-images.githubusercontent.com/68508896/178497518-a0811d4c-3ae5-4c93-87ad-ab43f76bec32.png)
+
