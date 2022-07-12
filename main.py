@@ -32,8 +32,8 @@ from algorithms.kNN import k_nearest_neighbors
 def database_tweak_switch():
     switcher = {
         1: ["Original", 'database/vectors_224X224.pkl'],
-        2: ["Bilateral filter", 'database/vectors_bilateral_224X224.pkl'],
-        3: ["Bilateral filter + LoG", 'database/image_bilateralLoG_224X224.pkl'],
+        2: ["Bilateral filter", 'database/vectors_bilateral_224X224.pkl'],  # ~65-70%
+        3: ["Bilateral filter + LoG", 'database/image_bilateralLoG_224X224.pkl'],  # ~70%
         4: ["Bilateral filter + LoG (Black & White)", 'database/image_bilateralLoGBlack_224X224.pkl'],
         5: ["Bilateral filter + LoG + Canny", 'database/image_bilateralLoGCanny_224X224.pkl'],
         6: ["Histogram Equalization", 'database/image_histogramEq_224X224.pkl'],

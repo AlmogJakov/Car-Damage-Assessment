@@ -20,7 +20,6 @@ def Support_Vector_Machine(x_train, x_test, y_train, y_test, sample_of_data=Fals
     # Run SVM for classification
     model = SVC(C=1, kernel="linear", gamma="auto")
     model.fit(x_train, y_train)
-
     # Check the accuracy on train and test
     prediction = model.predict(x_train)
     train_acc = 100 * np.sum(prediction == y_train) / len(y_train)
