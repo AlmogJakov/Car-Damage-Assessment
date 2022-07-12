@@ -28,6 +28,7 @@ Example images from each class; Broken headlamp, Broken tail lamp, Glass shatter
 
 <h2>Database tweaks comparison:</h2>  
 
+- Comparison using the Support Vector Machine algorithm on VGG vectors
 - Examining the effect of image properties on learning    
 - Comparing results with success rates
 - Mark: HLT=Hough Line Transform
