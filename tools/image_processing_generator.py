@@ -52,7 +52,7 @@ def white_balance(img):
 n = 1512
 for i in range(n):
     # load an image from file
-    img_path = f'database/image_224X224/{i}.jpeg'
+    img_path = f'../database/image_224X224/{i}.jpeg'
     # img = cv2.cvtColor(cv2.imread(img_path), cv2.COLOR_BGR2RGB) / 255
     img = np.array(cv2.imread(img_path, 1) / 255)
     # img = cv2.Canny((img * 255).astype(np.uint8), 125, 175) / 255
@@ -113,7 +113,7 @@ for i in range(n):
     # hsv_gamma = cv2.merge([hue, sat, val_gamma])
     # img = cv2.cvtColor(hsv_gamma, cv2.COLOR_HSV2BGR)
 
-    cv2.imwrite(f'database/image_bilateral_224X224/{i}.png', img)
+    cv2.imwrite(f'../database/image_bilateral_224X224/{i}.png', img)
 
     # edges = np.dstack((edges, edges, edges))
     # img = img + (img * edges * 0.2)

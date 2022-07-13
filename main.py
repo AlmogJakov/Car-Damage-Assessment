@@ -1,4 +1,4 @@
-from InitialOperations import split_train_test, get_data
+from init_database import split_train_test, get_data
 from algorithms.CNN import *
 from algorithms.DTs import decision_tree
 from algorithms.SVM import Support_Vector_Machine

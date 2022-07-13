@@ -45,8 +45,8 @@ def rotateImage(RGB_image, angle):
 n = 1512
 for i in range(n):
     # load an image from file
-    img_path = f'database/image_224X224/{i}.jpeg'
+    img_path = f'../database/image_224X224/{i}.jpeg'
     img = np.array(cv2.imread(img_path))
     # print(findTiltAngle(findEdges(binarizeImage(img))))
     img = rotateImage(img, findTiltAngle(findEdges(binarizeImage(img)))) * 255
-    cv2.imwrite(f'database/image_bilateral_224X224/{i}.png', img)
+    cv2.imwrite(f'../database/image_bilateral_224X224/{i}.png', img)
