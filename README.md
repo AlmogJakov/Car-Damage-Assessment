@@ -17,13 +17,21 @@ In addition:
 The car damage dataset contains approximately 1,500 unique RGB images with the dimensions 224 x 224 pixels, and is split into a training- and a validation subset.
 
 Classes   
-The illustration abov show sample images from the various classes in the dataset. Note that the unknown class contains images of cars that are in either pristine or wrecked condition.
+The illustration above show sample images from the various classes in the dataset. Note that the unknown class contains images of cars that are in either pristine or wrecked condition.
 
 Each collected image represents one car with one specific type of damage.
 
 Example images from each class; Broken headlamp, Broken tail lamp, Glass shatter, Door scratch, Door dent, Bumper dent, Bumper scratch, Unknown   
 
 [Database Source](https://www.kaggle.com/datasets/hamzamanssor/car-damage-assessment)
+
+<h2>Algorithms:</h2>
+
+* <b>CNN</b> is a concept of a neural network, Its main attributes may be that it consists of convolution layers, pooling layers , activation layers etc.
+* <b>VGG</b> is a specific convolutional network designed for classification and localization.Like many other popular networks like Google-Net, Alex Net etc.
+* <b>SVM</b> works by mapping data to a high-dimensional feature space so that data points can be categorized, even when the data are not otherwise linearly separable. A separator between the categories is found, then the data are transformed in such a way that the separator could be drawn as a hyperplane. Following this, characteristics of new data can be used to predict the group to which a new record should belong [(Source)](https://www.ibm.com/docs/it/spss-modeler/SaaS?topic=models-how-svm-works).
+* <b>KNN</b> works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label (in the case of classification) or averages the labels (in the case of regression) [(Source)](https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761).
+* <b>Decision trees</b> use multiple algorithms to decide to split a node into two or more sub-nodes. The creation of sub-nodes increases the homogeneity of resultant sub-nodes. In other words, we can say that the purity of the node increases with respect to the target variable. The decision tree splits the nodes on all available variables and then selects the split which results in most homogeneous sub-nodes [(Source)](https://www.kdnuggets.com/2020/01/decision-tree-algorithm-explained.html).
 
 
 <h2>Database tweaks comparison:</h2>  
@@ -34,4 +42,5 @@ Example images from each class; Broken headlamp, Broken tail lamp, Glass shatter
 - Mark: HLT=Hough Line Transform
 
 ![image](https://user-images.githubusercontent.com/68508896/178497518-a0811d4c-3ae5-4c93-87ad-ab43f76bec32.png)
+
 
