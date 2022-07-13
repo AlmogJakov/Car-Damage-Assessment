@@ -1,9 +1,7 @@
 import numpy as np
 from keras import Sequential
-from keras.callbacks import LambdaCallback
 from keras.layers import Flatten, Dense, Activation, MaxPooling2D, Conv2D, MaxPool2D, Conv1D, Dropout, MaxPooling1D
 from matplotlib import pyplot as plt
-# from tensorflow import keras
 import tensorflow as tf
 
 

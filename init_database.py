@@ -26,7 +26,11 @@ def split_train_test(vectors_path):
         data = pickle.load(f)
         data = np.array(data)
     labels = get_csv_labels()
-    X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2)
+    # It is desirable to split the dataset into train and test sets in a way that preserves
+    # the same proportions of examples in each class as observed in the original dataset.
+    # This is called a stratified train-test split
+    X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.15, stratify=labels)
+    # X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.15)
     return X_train, X_test, y_train, y_test
 
 
