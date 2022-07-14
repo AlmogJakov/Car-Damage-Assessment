@@ -34,7 +34,12 @@ Example images from each class; Broken headlamp, Broken tail lamp, Glass shatter
 * <b>Decision trees</b> use multiple algorithms to decide to split a node into two or more sub-nodes. The creation of sub-nodes increases the homogeneity of resultant sub-nodes. In other words, we can say that the purity of the node increases with respect to the target variable. The decision tree splits the nodes on all available variables and then selects the split which results in most homogeneous sub-nodes [(Source)](https://www.kdnuggets.com/2020/01/decision-tree-algorithm-explained.html).
 
 
-<h2>Database tweaks comparison:</h2>  
+<h2>Algorithms Results:</h2>
+
+![image](https://user-images.githubusercontent.com/68508896/178959234-9cdcb88d-9256-493c-992f-9162dd7ba0d9.png)
+
+
+<h2>Database Tweaks Comparison Results:</h2>  
 
 - Examining the effect of image properties on learning    
 - Comparison using the Support Vector Machine algorithm on VGG vectors
