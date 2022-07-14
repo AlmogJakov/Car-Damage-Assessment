@@ -49,3 +49,7 @@ Example images from each class; Broken headlamp, Broken tail lamp, Glass shatter
 ![image](https://user-images.githubusercontent.com/68508896/178497518-a0811d4c-3ae5-4c93-87ad-ab43f76bec32.png)
 
 
+--------   
+
+Itay Github: [https://github.com/itay-rafee](https://github.com/itay-rafee)  
+Almog Github: [https://github.com/AlmogJakov](https://github.com/AlmogJakov)
